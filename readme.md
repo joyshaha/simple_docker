@@ -16,12 +16,14 @@
 # To containarized built docker image
 	- docker-compose up
 
-# To start, stop, down up an running container
+# To start, stop, down all up an running container in orchestrator
 	- docker-compose start
 	- docker-compose stop
 	- docker-compose down
 
+# To start, stop, down a single container from multiple container
+	- sudo docker container stop [NAME]
 
 
-### Note: If you do not connection to docker group user, 
-		you will need to simply use 'sudo' before running the above command.
+
+### Note: If you do not connection to docker group user, you will need to simply use 'sudo' before running the above command.
